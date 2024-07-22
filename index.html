@@ -117,7 +117,7 @@
                 Robust Deep Joint Source-Channel Coding Enabled Distributed Image Transmision
             </h3>
             <h3 class="col-md-12 text-center">
-                <small>IEEE XXX</small>
+                <small>IEEE xxx</small>
             </h3>
         </div>
 
@@ -125,7 +125,7 @@
             <div class="mx-auto text-center">
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item">
-                        <a href="https://github.com/dongbiao321">Biao Dong</a>
+                        <a href="https://scholar.google.com.hk/citations?user=j1_Lgw0AAAAJ&hl=zh-CN&oi=sra">Biao Dong</a>
 
                     <li class="list-inline-item">
                         <a href="https://scholar.google.com.hk/citations?user=UgcNpQkAAAAJ&hl=zh-CN&oi=sra">Bin Cao</a>
@@ -139,7 +139,7 @@
             <div class="mx-auto">
                 <ul class="nav">
                     <li class="nav-item text-center">
-                        <a href="https://arxiv.org/abs/2303.14637" class="nav-link">
+                        <a href="https://github.com/dongbiao321" class="nav-link">
                             <svg style="width:48px;height:48px" viewBox="0 0 24 24">
                                 <path fill="currentColor"
                                       d="M16 0H8C6.9 0 6 .9 6 2V18C6 19.1 6.9 20 8 20H20C21.1 20 22 19.1 22 18V6L16 0M20 18H8V2H15V7H20V18M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M10 10V12H18V10H10M10 14V16H15V14H10Z"/>
@@ -148,7 +148,7 @@
                             Paper
                         </a>
                     <li class="nav-item text-center">
-                        <a href="https://github.com/wsxtyrdd/NTSCC_plus" class="nav-link">
+                        <a href="https://github.com/dongbiao321" class="nav-link">
                             <svg style="width:48px;height:48px" viewBox="0 0 24 24">
                                 <path fill="currentColor"
                                       d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/>
@@ -220,77 +220,112 @@
                 <h4 class="pb-2">Overview</h4>
                 <img src="img/overview.png" class="img-responsive" alt="pipeline">
                 <p class="text-justify">
-                    g<sub>a</sub>,
-                    the contextual JSCC encoder f<sub>e</sub>,
-                    the contextual JSCC decoder f<sub>d</sub>,
-                    the semantic synthesis transform g<sub>s</sub>, and the checkerboard context entropy model.
-                    <br> Compared to the original NTSCC system, three improvement methods are marked with circled
-                    numbers:
-                    <br><span style="color:red">①</span> denotes the contextual modeling and contextual JSCC toward
-                    higher system coding gain (NTSCC+);
-                    <br><span style="color:red">②</span> denotes the rate compatible and channel adaptive strategy to
-                    enable compatible NTSCC+;
-                    <br><span style="color:red">③</span> denotes the online latent feature and JSCC codec editing
-                    methods to enable more flexible adaptability (NTSCC++).
                 </p>
             </div>
         </div>
         <div class="row mb-4">
             <div class="col-md-9 mx-auto">
-                <h4>Partial rate-distortion results </h4>
+                <h4>Transmission Performance</h4>
                 <p class="text-justify">
-                    We compare the rate-distortion performance of different coded transmission schemes over the AWGN channel at SNR = 10dB.
-                    Our contextual NTSCC model (NTSCC+) and its online adapted version (NTSCC++) show powerful performance when compared to the separately-designed coded transmission schemes.
-                    To the best of our knowledge, this is the first end-to-end transmission system outperforming the SOTA VTM + 5G LDPC scheme on the classical PSNR metric.
+                    We use PSNR, MS-SSIM and LPIPS to comprehensively evaluate
+                    the multi-view image transmission performance of the proposed model.
                 </p>
                 <div class="row pt-1 pb-1">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="row gif-label">
-                            <div class="col-12" style="font-size:16px">Kodak dataset </div>
+                            <div class="col-12" style="font-size:16px">PSNR under Cityscape</div>
                         </div>
-                        <img src="img/rotation_animation.gif" class="img-responsive" alt="shapenet results animated">
+                        <img src="img/PSNR_city.gif" class="img-responsive" alt="PSNR results animated">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="row gif-label">
-                            <div class="col-12" style="font-size:16px">CLIC21 testset </div>
+                            <div class="col-12" style="font-size:16px">MS-SSIM under Cityscape</div>
                         </div>
-                        <img src="img/Fig_rd_c-eps-converted-to.png" class="img-responsive" alt="shapenet results animated">
+                        <img src="img/MSSSIM_city.gif" class="img-responsive" alt="MS-SSIM results animated">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row gif-label">
+                            <div class="col-12" style="font-size:16px">LPIPS under Cityscape</div>
+                        </div>
+                        <img src="img/LPIPS_city.gif" class="img-responsive" alt="LPIPS results animated">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-9 mx-auto">
+                <div class="row pt-1 pb-1">
+                    <div class="col-md-4">
+                        <div class="row gif-label">
+                            <div class="col-12" style="font-size:16px">PSNR under KITTI</div>
+                        </div>
+                        <img src="img/PSNR_kitt.gif" class="img-responsive" alt="PSNR results animated">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row gif-label">
+                            <div class="col-12" style="font-size:16px">MS-SSIM under KITTI</div>
+                        </div>
+                        <img src="img/MSSSIM_kitt.gif" class="img-responsive" alt="MS-SSIM results animated">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row gif-label">
+                            <div class="col-12" style="font-size:16px">LPIPS under KITTI</div>
+                        </div>
+                        <img src="img/LPIPS_kitt.gif" class="img-responsive" alt="LPIPS results animated">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row mb-4">
+            <div class="col-md-9 mx-auto">
+                <h4>Some Discussions and Analysis </h4>
+                <p class="text-justify">
+                    Ablation Study, PAPR Reduction and Dynamic Weight
+                </p>
+                <div class="row pt-1 pb-1">
+                    <div class="col-md-4">
+                        <div class="row gif-label">
+                            <div class="col-12" style="font-size:16px">Ablation Study</div>
+                        </div>
+                        <img src="img/rotation_animation.gif" class="img-responsive" alt="PSNR results animated">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row gif-label">
+                            <div class="col-12" style="font-size:16px">PAPR Reduction</div>
+                        </div>
+                        <img src="img/PAPR_city.gif" class="img-responsive" alt="MS-SSIM results animated">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row gif-label">
+                            <div class="col-12" style="font-size:16px">Dynamic Weight</div>
+                        </div>
+                        <img src="img/Dynamic_Weight.gif" class="img-responsive" alt="LPIPS results animated">
                     </div>
                 </div>
             </div>
         </div>
+
+
         <div class="row mb-3">
             <div class="col-md-9 mx-auto">
-                <h4>Related Links</h4>
-                <ul>
-                    <li>
-                        NTSCC was proposed in <a href="https://ieeexplore.ieee.org/abstract/document/9791398/">Dai et al. (2022)</a> [<a href="https://semcomm.github.io/ntscc/">website</a>].
-                    <li>
-                        Link-level simulations are implemented at the top of <a href="https://github.com/NVlabs/sionna">Sionna</a>.
-                    <li>
-                        Parts of our PyTorch NTC implementation are taken from <a href="https://github.com/InterDigitalInc/CompressAI">CompressAI</a>.
-                    <li>
-                        The ViT-based nonlinear transform are taken from <a href="https://github.com/microsoft/Swin-Transformer">Swin Transformer</a> and <a href="https://github.com/SHI-Labs/Neighborhood-Attention-Transformer">Neighborhood Attention Transformer</a>.
-                </ul>
+                <h4 class="pb-2">Visual Comparison</h4>
+                <img src="img/Visualization.png" class="img-responsive" alt="pipeline">
+                <p class="text-justify">
+                </p>
             </div>
         </div>
-        <div class="row mb-4">
-            <div class="col-md-9 mx-auto">
-                <h4 class="mb-3">Bibtex</h4>
-                <textarea id="bibtex" class="form-control" readonly>@inproceedings{
-      wang2023improved,
-      title={Improved Nonlinear Transform Source-Channel Coding to Catalyze Semantic Communications},
-      author={Sixian Wang and Jincheng Dai and Xiaoqi Qin and Zhongwei Si and Kai Niu and Ping Zhang},
-      year={2023},
-      booktitle={IEEE Journal of Selected Topics in Signal Processing, early access},
-}</textarea>
-            </div>
-        </div>
+
         <div class="row mb-3">
             <div class="col-md-9 mx-auto">
                 <h4>Acknowledgements</h4>
                 <p class="text-justify">
-                    This website is inspired by the template of <a href="https://alexyu.net/pixelnerf/">Pixel Nerf</a>.
+                    This website is inspired by the template of <a href="https://alexyu.net/pixelnerf/">Pixel Nerf</a> and
+                    <a href="https://semcomm.github.io/ntscc_plus/">NTSCC++</a>.
                     Please send any questions or comments to dongbiao26@gmail.com </a>.
                 </p>
             </div>
